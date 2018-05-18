@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo What is your name?
+NAME
+
+echo Oh, hi, $NAME! Is this working? (Y/N)
+YN
+	if [ $YN=Y ]; then
+	echo Okay, bye!;
+	else
+	no=("Of course it isn't." "It never does." "Classic program, to be quite honest.")
+	for grumble in ${no[*]}
+	do
+		echo $grumble
