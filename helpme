@@ -1,0 +1,22 @@
+#!/bin/bash
+
+num=$1
+guess=0
+
+while [ $num -ne $guess ]; do
+
+echo "Guess a number."
+read guess
+ 
+	if [ $guess -gt $num ]; then
+	echo "Too high."
+	else if [ $guess -lt $num ]; then
+	echo "Too low."
+	fi
+	fi
+done
+
+if [ $num=$guess ]; then
+echo "Correct!"
+fi
+
